@@ -1,19 +1,9 @@
 #include <Atom.h>
 
-class Sandbox : public Atom::Application
+int main()
 {
-  public:
-    Sandbox(){
-
-    }
-
-    ~Sandbox(){
-
-    }
-};
-
-void main(){
-  Sandbox *sandbox = new Sandbox();
-  sandbox->Run();
-  delete sandbox;
+  Atom atom;
+  atom.initialize();
+  atom.displayMessage("Hello from AtomExamples");
+  return 0;
 }
